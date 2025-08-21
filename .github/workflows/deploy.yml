@@ -1,0 +1,35 @@
+name: Deploy project-* branches to GitHub Pages
+
+on:
+  push:
+    branches:
+      - 'project-*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/heads/project-')
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Copy static files to deployment folder
+        run: |
+          mkdir -p deploy
+          cp -r ./* deploy/
+          rm -rf deploy/.git deploy/.github
+
+      - name: Deploy to gh-pages subfolder
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: deploy
+          destination_dir: ${{ github.ref_name }}
+          keep_files: true
+          commit_message: "Deploy ${{ github.ref_name }} to GitHub Pages"
+

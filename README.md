@@ -1,1 +1,36 @@
-# landing-pages
+
+# Promo Pages
+
+[![Deploy project-* branches](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg)](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml)
+
+## 🚀 Project Previews
+
+Preview any deployed project-* branch at:
+
+- [project-c](https://inspiredtechinc.github.io/promo-pages/project-c/)
+- [project-k](https://inspiredtechinc.github.io/promo-pages/project-k/)
+- [project-x](https://inspiredtechinc.github.io/promo-pages/project-x/)
+
+## 🛠 How to Deploy a New Project
+
+1. Create a new branch named `project-<your-id>` (e.g., `project-y`).
+2. Add your static HTML files to the branch.
+3. Push the branch to GitHub:
+	```sh
+	git checkout -b project-y
+	# Add your files
+	git add .
+	git commit -m "Add project-y landing page"
+	git push origin project-y
+	```
+4. GitHub Actions will automatically deploy your branch to:
+	`https://inspiredtechinc.github.io/promo-pages/project-y/`
+
+## 💡 Tips
+
+- Only branches named `project-*` are deployed and previewable.
+- You can add as many project-* branches as you need.
+- No custom domain or build step required—just static files!
+
+---
+Maintained by InspiredTech Inc. | For questions, open an issue or pull request.
