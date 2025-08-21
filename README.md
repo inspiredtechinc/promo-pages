@@ -28,4 +28,4 @@ Preview the deployed project-x branch at:
 - No custom domain or build step required—just static files!
 
 ---
-Maintained by InspiredTech Inc. | For questions, open an issue or pull request.
+Maintained by InspiredTech Inc. | For questions, open an issue or pull request. 
