@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/heads/project-')
+    # if: startsWith(github.ref, 'refs/heads/project-')
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4
