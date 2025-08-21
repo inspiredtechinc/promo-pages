@@ -23,6 +23,7 @@ jobs:
           mkdir -p deploy
           cp -r ./* deploy/
           rm -rf deploy/.git deploy/.github
+          touch deploy/.nojekyll
 
       - name: Deploy to gh-pages subfolder
         uses: peaceiris/actions-gh-pages@v4
