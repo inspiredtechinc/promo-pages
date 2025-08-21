@@ -21,7 +21,7 @@ jobs:
       - name: Copy static files to deployment folder
         run: |
           mkdir -p deploy
-          cp -r ./* deploy/
+          cp -r docs/* deploy/
           rm -rf deploy/.git deploy/.github
           touch deploy/.nojekyll
 
