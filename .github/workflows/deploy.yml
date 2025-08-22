@@ -21,10 +21,15 @@ jobs:
       - name: Install dependencies
         run: cd docs && npm install
 
-      - name: Build app
+      - name: Set VITE_BASE and build app
         run: |
           export VITE_BASE="/promo-pages/${GITHUB_REF_NAME}/"
+          echo "VITE_BASE is $VITE_BASE"
           cd docs && npm run build
+
+      - name: Show built index.html asset paths
+        run: |
+          head -20 docs/dist/index.html
 
       - name: Copy static files to deployment folder
         run: |
