@@ -35,7 +35,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: deploy
+          publish_dir: deploy/${{ github.ref_name }}
           destination_dir: ${{ github.ref_name }}
           keep_files: true
           commit_message: "Deploy ${{ github.ref_name }} to GitHub Pages"
