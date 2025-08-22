@@ -12,7 +12,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
+        <BrowserRouter basename="/promo-pages/project-x">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
