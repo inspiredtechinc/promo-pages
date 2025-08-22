@@ -21,13 +21,18 @@ jobs:
       - name: Build app
         run: cd docs && npm run build
 
-      - name: Add .nojekyll
-        run: touch docs/dist/.nojekyll
+      - name: Prepare deployment folder
+        run: |
+          BRANCH_NAME=$(echo "${GITHUB_REF_NAME}")
+          mkdir -p deploy/$BRANCH_NAME
+          cp -r docs/dist/* deploy/$BRANCH_NAME/
+          touch deploy/.nojekyll
+          touch deploy/$BRANCH_NAME/.nojekyll
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/dist
+          publish_dir: deploy
           keep_files: false
-          commit_message: "Deploy static site to GitHub Pages"
+          commit_message: "Deploy all project previews to GitHub Pages"
