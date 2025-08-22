@@ -22,7 +22,9 @@ jobs:
         run: cd docs && npm install
 
       - name: Build app
-        run: cd docs && npm run build
+        run: |
+          export VITE_BASE="/promo-pages/${GITHUB_REF_NAME}/"
+          cd docs && npm run build
 
       - name: Copy static files to deployment folder
         run: |
