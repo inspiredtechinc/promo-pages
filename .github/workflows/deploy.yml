@@ -26,10 +26,10 @@ jobs:
 
       - name: Copy static files to deployment folder
         run: |
-          mkdir -p deploy
-          cp -r docs/dist/* deploy/
-          cp -r docs/dist deploy/dist
-          touch deploy/.nojekyll
+          BRANCH_NAME=$(echo "${GITHUB_REF_NAME}")
+          mkdir -p deploy/$BRANCH_NAME
+          cp -r docs/dist/* deploy/$BRANCH_NAME/
+          touch deploy/$BRANCH_NAME/.nojekyll
 
       - name: Deploy to gh-pages subfolder
         uses: peaceiris/actions-gh-pages@v4
