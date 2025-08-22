@@ -28,6 +28,7 @@ jobs:
         run: |
           mkdir -p deploy
           cp -r docs/dist/* deploy/
+          cp -r docs/dist deploy/dist
           touch deploy/.nojekyll
 
       - name: Deploy to gh-pages subfolder
