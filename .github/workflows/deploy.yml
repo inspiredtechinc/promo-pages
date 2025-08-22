@@ -1,9 +1,9 @@
-name: Deploy project-* branches to GitHub Pages
+name: Deploy static site to GitHub Pages
 
 on:
   push:
     branches:
-      - 'project-*'
+      - project-x
   workflow_dispatch:
 
 jobs:
@@ -15,36 +15,19 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
       - name: Install dependencies
         run: cd docs && npm install
 
-      - name: Set VITE_BASE and build app
-        run: |
-          export VITE_BASE="/promo-pages/${GITHUB_REF_NAME}/"
-          echo "VITE_BASE is $VITE_BASE"
-          cd docs && npm run build
+      - name: Build app
+        run: cd docs && npm run build
 
-      - name: Show built index.html asset paths
-        run: |
-          head -20 docs/dist/index.html
+      - name: Add .nojekyll
+        run: touch docs/dist/.nojekyll
 
-      - name: Copy static files to deployment folder
-        run: |
-          BRANCH_NAME=$(echo "${GITHUB_REF_NAME}")
-          mkdir -p deploy/$BRANCH_NAME
-          cp -r docs/dist/* deploy/$BRANCH_NAME/
-          touch deploy/.nojekyll
-          touch deploy/$BRANCH_NAME/.nojekyll
-
-      - name: Deploy to gh-pages subfolder
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: deploy/${{ github.ref_name }}
-          destination_dir: ${{ github.ref_name }}
-          keep_files: true
-          commit_message: "Deploy ${{ github.ref_name }} to GitHub Pages"
-
+          publish_dir: docs/dist
+          keep_files: false
+          commit_message: "Deploy static site to GitHub Pages"
