@@ -10,12 +10,15 @@ export default function Featured() {
         
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Section Header */}
-          <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight max-w-5xl mx-auto">
+          <div className="mb-16 lg:mb-20">
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-semibold leading-tight max-w-5xl">
               <span className="text-gray-800">Not just </span>
-              <span className="text-brand">features</span>
-              <span className="text-gray-800">, your everyday essentials, </span>
-              <span className="text-brand">reimagined</span>
+              <span className="text-brand">features </span>
+              <span className="text-gray-800">, your everyday </span>
+              <div className="mt-2">
+                <span className="text-gray-800">essentials, </span>
+                <span className="text-brand">reimagined</span>
+              </div>
             </h2>
           </div>
 
@@ -45,7 +48,7 @@ export default function Featured() {
 
           {/* Feature 2 - Community Kitchens & Lounges */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
-            <div className="flex-1 lg:max-w-lg">
+            <div className="flex-1 lg:max-w-lg p-8">
               <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -91,7 +94,7 @@ export default function Featured() {
 
           {/* Feature 4 - Flexible Workspaces */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
-            <div className="flex-1 lg:max-w-lg">
+            <div className="flex-1 lg:max-w-lg p-8">
               <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>

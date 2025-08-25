@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
             {/* Brand Section */}
             <div className="space-y-4">
-              <h3 className="text-brand font-bold text-3xl lg:text-4xl">Couchsurfing</h3>
+              <h3 className="text-brand font-bold text-3xl lg:text-4xl">Project-X</h3>
               <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
                 Over 8,912,000 Satisfied with our appearance
               </p>

@@ -4,10 +4,10 @@ import { ArrowRight } from "lucide-react";
 export default function Hero() {
  
     return (
-       <main className="relative z-10 px-4 lg:px-28">
+       <main className="relative z-10 mt-4 px-4 lg:px-28">
         <div className="max-w-7xl mx-auto">
           {/* Hero Text */}
-          <div className="text-center mb-8 lg:mb-12">
+          <div className="text-center mb-4 lg:mb-8">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-6 lg:mb-8">
               <span className="text-gray-800">A Global </span>
               <span className="text-brand">Welcome, </span>
@@ -27,12 +27,12 @@ export default function Hero() {
           </div>
 
           {/* Hero Image */}
-          <div className="flex justify-center mt-8 lg:mt-16">
+          <div className="flex justify-center items-center">
             <div className="relative w-full max-w-4xl">
               <img 
                 src="https://api.builder.io/api/v1/image/assets/TEMP/6701368a7507591afdb6d2d14a5c23b45a9ce5b8?width=2484" 
                 alt="Happy traveler with luggage giving thumbs up"
-                className="w-full h-auto object-contain"
+                className="w-full h-[600px] object-contain"
               />
             </div>
           </div>
