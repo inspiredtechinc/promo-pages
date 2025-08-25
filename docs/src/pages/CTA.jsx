@@ -38,7 +38,7 @@ export default function CTA() {
               <img 
                 src="https://api.builder.io/api/v1/image/assets/TEMP/0861f5931dcbd9676867eb8294bda46323e6990c?width=404" 
                 alt="Get it on Google Play" 
-                className="h-12 w-auto"
+                className="h-11 w-auto"
               />
             </a>
 

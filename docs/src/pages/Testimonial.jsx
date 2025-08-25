@@ -24,12 +24,12 @@ export default function Testimonial() {
           </div>
 
           {/* Testimonials Grid */}
-          <div className="container grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 relative z-10">
             {/* Testimonial 1 - Sarah Miller */}
-            <div className="bg-white rounded-lg shadow-xl p-6 sm:p-8">
+            <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
               <div className="flex flex-col sm:flex-row items-start sm:space-x-6 space-y-4 sm:space-y-0">
                 <div className="relative flex-shrink-0">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
+                  <div className="w-20 h-20 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
                     <img
                       src="https://images.unsplash.com/photo-1494790108755-2616b639e709?w=100&h=100&fit=crop&crop=face"
                       alt="Sarah Miller"
@@ -62,10 +62,10 @@ export default function Testimonial() {
             </div>
 
             {/* Testimonial 2 - Elizabeth Thomp */}
-            <div className="bg-white rounded-lg shadow-xl p-6 sm:p-8">
+            <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
               <div className="flex flex-col sm:flex-row items-start sm:space-x-6 space-y-4 sm:space-y-0">
                 <div className="relative flex-shrink-0">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
+                  <div className="w-20 h-20 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
                     <img
                       src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
                       alt="Elizabeth Thomp"
@@ -98,10 +98,10 @@ export default function Testimonial() {
             </div>
 
             {/* Testimonial 3 - Moe John */}
-            <div className="bg-white rounded-lg shadow-xl p-6 sm:p-8">
+            <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
               <div className="flex flex-col sm:flex-row items-start sm:space-x-6 space-y-4 sm:space-y-0">
                 <div className="relative flex-shrink-0">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
+                  <div className="w-20 h-20 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
                     <img
                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
                       alt="Moe John"
@@ -139,10 +139,10 @@ export default function Testimonial() {
             </div>
 
             {/* Testimonial 4 - Abdul Khan */}
-            <div className="bg-white rounded-lg shadow-xl p-6 sm:p-8">
+            <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
               <div className="flex flex-col sm:flex-row items-start sm:space-x-6 space-y-4 sm:space-y-0">
                 <div className="relative flex-shrink-0">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
+                  <div className="w-20 h-20 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
                     <img
                       src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
                       alt="Abdul Khan"

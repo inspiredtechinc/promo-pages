@@ -18,13 +18,13 @@ export default function Home() {
   const scrollToSection = (section) => {
 
     if(section === 'about' && aboutRef.current){
-      aboutRef.current.scrollIntoView({behviour: "smooth"});
+      aboutRef.current.scrollIntoView({behavior: "smooth"});
     }
     if(section === 'featured' && featuredRef.current) {
-      featuredRef.current.scrollIntoView({behviour: "smooth"});
+      featuredRef.current.scrollIntoView({behavior: "smooth"});
     }
     if(section === 'testimonial' && testimonialRef.current) {
-      testimonialRef.current.scrollIntoView({behviour: "smooth"});
+      testimonialRef.current.scrollIntoView({behavior: "smooth"});
     }
   };
 
