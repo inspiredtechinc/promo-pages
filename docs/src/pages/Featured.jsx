@@ -25,7 +25,7 @@ export default function Featured() {
           {/* Feature 1 - Shared Sleep Spaces */}
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
             <div className="flex-1 lg:max-w-lg">
-              <div className="bg-white rounded-lg shadow-xl p-8">
+              <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mb-6">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v11h2v3h2v-3h2v3h2v-3h9v3h2v-3h2V6h-2z"/>
@@ -71,7 +71,7 @@ export default function Featured() {
           {/* Feature 3 - Storage & Charging Stations */}
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
             <div className="flex-1 lg:max-w-lg">
-              <div className="bg-white rounded-lg shadow-xl p-8">
+              <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mb-6">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9z"/>
