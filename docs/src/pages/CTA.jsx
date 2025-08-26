@@ -25,7 +25,7 @@ export default function CTA() {
 
           {/* Description */}
           <p className="text-lg lg:text-xl text-amber-700 leading-relaxed mb-12 lg:mb-16 max-w-4xl mx-auto">
-            Couchsurfing is an application for job seekers and workers who prioritize user comfort and the quality of services provided by our team. We provide comfort and quality in your range.
+            Project-X is an application for job seekers and workers who prioritize user comfort and the quality of services provided by our team. We provide comfort and quality in your range.
           </p>
 
           {/* App Store Buttons */}

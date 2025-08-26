@@ -53,7 +53,7 @@ export default function Home() {
       <CTA />
 
       {/* Footer */}
-      <Footer />
+      <Footer onSectionClick={scrollToSection} />
     </div>
   );
 }

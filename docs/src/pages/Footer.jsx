@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "../components/button";
 
 
-export default function Footer() {
+export default function Footer({ onSectionClick }) {
 
     return (
       <footer className="bg-slate-200 relative overflow-hidden">
@@ -51,29 +51,30 @@ export default function Footer() {
             <div className="space-y-6">
               <h4 className="text-black font-bold text-xl lg:text-2xl">Short Links</h4>
               <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <Link to="/about" className="text-gray-500 hover:text-gray-700 transition-colors">About Us</Link>
-                  <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 14 14">
-                    <path fillRule="evenodd" clipRule="evenodd" d="M11.0745 6.94736C11.0745 7.19623 10.9836 7.44508 10.8022 7.63482L5.0916 13.6058C4.72834 13.9856 4.13936 13.9856 3.77624 13.6058C3.41313 13.2261 3.41313 12.6104 3.77624 12.2305L8.8293 6.94736L3.77642 1.66417C3.4133 1.28434 3.4133 0.668697 3.77642 0.289052C4.13954 -0.0909615 4.72851 -0.0909615 5.09178 0.289052L10.8024 6.25989C10.9838 6.44973 11.0745 6.69857 11.0745 6.94736Z" />
-                  </svg>
-                </div>
-                <div className="flex items-center justify-between">
-                  <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">Contact Us</a>
-                  <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 14 15">
-                    <path fillRule="evenodd" clipRule="evenodd" d="M11.0745 7.88876C11.0745 8.13764 10.9836 8.38648 10.8022 8.57623L5.0916 14.5472C4.72834 14.927 4.13936 14.927 3.77624 14.5472C3.41313 14.1675 3.41313 13.5518 3.77624 13.1719L8.8293 7.88876L3.77642 2.60557C3.4133 2.22575 3.4133 1.6101 3.77642 1.23046C4.13954 0.850445 4.72851 0.850445 5.09178 1.23046L10.8024 7.2013C10.9838 7.39113 11.0745 7.63998 11.0745 7.88876Z" />
-                  </svg>
-                </div>
-                <div className="flex items-center justify-between">
-                  <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">Blogs</a>
-                  <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 14 14">
-                    <path fillRule="evenodd" clipRule="evenodd" d="M11.0745 7.02353C11.0745 7.2724 10.9836 7.52125 10.8022 7.71099L5.0916 13.6819C4.72834 14.0618 4.13936 14.0618 3.77624 13.6819C3.41313 13.3022 3.41313 12.6865 3.77624 12.3067L8.8293 7.02353L3.77642 1.74034C3.4133 1.36051 3.4133 0.744869 3.77642 0.365224C4.13954 -0.0147896 4.72851 -0.0147896 5.09178 0.365224L10.8024 6.33606C10.9838 6.5259 11.0745 6.77474 11.0745 7.02353Z" />
-                  </svg>
-                </div>
-                <div className="flex items-center justify-between">
-                  <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">FAQ Questions</a>
+                <div className="flex items-center justify-start space-x-4">
                   <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 14 15">
                     <path fillRule="evenodd" clipRule="evenodd" d="M11.0745 7.35361C11.0745 7.60248 10.9836 7.85133 10.8022 8.04107L5.0916 14.012C4.72834 14.3918 4.13936 14.3918 3.77624 14.012C3.41313 13.6323 3.41313 13.0166 3.77624 12.6368L8.8293 7.35361L3.77642 2.07042C3.4133 1.69059 3.4133 1.07495 3.77642 0.695302C4.13954 0.315289 4.72851 0.315289 5.09178 0.695302L10.8024 6.66614C10.9838 6.85598 11.0745 7.10482 11.0745 7.35361Z" />
                   </svg>
+                  <Link onClick={() => onSectionClick('about')} className="text-gray-500 hover:text-gray-700 transition-colors">About Us</Link>
+
+                </div>
+                <div className="flex items-center justify-start space-x-4">
+                  <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 14 15">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M11.0745 7.35361C11.0745 7.60248 10.9836 7.85133 10.8022 8.04107L5.0916 14.012C4.72834 14.3918 4.13936 14.3918 3.77624 14.012C3.41313 13.6323 3.41313 13.0166 3.77624 12.6368L8.8293 7.35361L3.77642 2.07042C3.4133 1.69059 3.4133 1.07495 3.77642 0.695302C4.13954 0.315289 4.72851 0.315289 5.09178 0.695302L10.8024 6.66614C10.9838 6.85598 11.0745 7.10482 11.0745 7.35361Z" />
+                  </svg>
+                  <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">Contact Us</a>
+                </div>
+                <div className="flex items-center justify-start space-x-4">
+                  <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 14 15">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M11.0745 7.35361C11.0745 7.60248 10.9836 7.85133 10.8022 8.04107L5.0916 14.012C4.72834 14.3918 4.13936 14.3918 3.77624 14.012C3.41313 13.6323 3.41313 13.0166 3.77624 12.6368L8.8293 7.35361L3.77642 2.07042C3.4133 1.69059 3.4133 1.07495 3.77642 0.695302C4.13954 0.315289 4.72851 0.315289 5.09178 0.695302L10.8024 6.66614C10.9838 6.85598 11.0745 7.10482 11.0745 7.35361Z" />
+                  </svg>
+                  <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">Blogs</a>
+                </div>
+                <div className="flex items-center justify-start space-x-4">
+                  <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 14 15">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M11.0745 7.35361C11.0745 7.60248 10.9836 7.85133 10.8022 8.04107L5.0916 14.012C4.72834 14.3918 4.13936 14.3918 3.77624 14.012C3.41313 13.6323 3.41313 13.0166 3.77624 12.6368L8.8293 7.35361L3.77642 2.07042C3.4133 1.69059 3.4133 1.07495 3.77642 0.695302C4.13954 0.315289 4.72851 0.315289 5.09178 0.695302L10.8024 6.66614C10.9838 6.85598 11.0745 7.10482 11.0745 7.35361Z" />
+                  </svg>
+                  <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">FAQ Questions</a>
                 </div>
               </div>
             </div>
@@ -92,7 +93,7 @@ export default function Footer() {
                   placeholder="email@example.com"
                   className="flex-1 px-4 py-3 rounded-full bg-white border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent"
                 />
-                <Button className="bg-brand hover:bg-brand/90 text-white px-6 py-3 rounded-full font-semibold whitespace-nowrap">
+                <Button className="h-12 bg-brand hover:bg-brand/90 text-white px-6 py-3 rounded-full font-semibold whitespace-nowrap">
                   Subscribe now
                 </Button>
               </div>
