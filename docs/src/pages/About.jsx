@@ -25,7 +25,7 @@ export default function About() {
         </div>
 
         {/* Listings Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 m-10">
           
           {/* Card 1 - Major Library */}
           <div className="bg-white rounded-3xl shadow-lg overflow-hidden relative">

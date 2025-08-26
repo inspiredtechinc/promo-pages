@@ -7,7 +7,7 @@ export default function Navigation({ onSectionClick }) {
     return (
         <>
         {/* Header */}
-      <header className="relative z-10 px-4 lg:px-28 py-12">
+      <header className="container relative z-10 px-4 lg:px-28 py-12">
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-brand font-bold text-2xl lg:text-3xl">
