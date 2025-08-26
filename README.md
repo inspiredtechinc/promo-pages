@@ -7,9 +7,10 @@
 
 Preview any deployed project-* branch at:
 
-- [project-c](https://inspiredtechinc.github.io/promo-pages/project-c/)
-- [project-k](https://inspiredtechinc.github.io/promo-pages/project-k/)
-- [project-x](https://inspiredtechinc.github.io/promo-pages/project-x/)
+- [project-c](https://inspiredtechinc.github.io/promo-pages/project-c/) ![Deploy project-c](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg?branch=project-c)
+- [project-k](https://inspiredtechinc.github.io/promo-pages/project-k/) ![Deploy project-k](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg?branch=project-k)
+- [project-x](https://inspiredtechinc.github.io/promo-pages/project-x/) ![Deploy project-x](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg?branch=project-x)
+
 
 ## 🛠 How to Deploy a New Project
 
