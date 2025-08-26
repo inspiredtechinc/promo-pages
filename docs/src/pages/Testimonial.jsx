@@ -132,7 +132,7 @@ export default function Testimonial() {
                 </div>
                 <p className="text-gray-600 text-sm mb-4">Product Owner</p>
                 <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                  "The verification system and reviews gave me the confidence to try couch surfing. I've met friendly hosts who made me feel welcome from day one.it's been an amazing experience!"
+                  "The verification system and reviews gave me the confidence to try couch surfing. I've met friendly hosts who made me feel welcome from day one. it's been an amazing experience!"
                 </p>
               </div>
             </div>

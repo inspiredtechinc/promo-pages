@@ -26,6 +26,7 @@ export default function About() {
 
         {/* Listings Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+          
           {/* Card 1 - Major Library */}
           <div className="bg-white rounded-3xl shadow-lg overflow-hidden relative">
             <div className="relative">
@@ -48,7 +49,7 @@ export default function About() {
                 </svg>
               </div>
               {/* Profile Picture */}
-              <div className="absolute bottom-4 right-8 w-110 h-110 rounded-full border-2 border-white overflow-hidden shadow-lg">
+              <div className="absolute -bottom-10 right-12 sm:w-[80px] sm:h-[80px] lg:w-[90px] lg:h-[90px] rounded-full border-2 border-white overflow-hidden shadow-lg">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/bc3462840de2d1f0129bd606bc3a51d27e1b242d?width=125"
                   alt="Host profile"
@@ -57,7 +58,7 @@ export default function About() {
               </div>
             </div>
             <div className="p-6">
-              <div className="flex items-start justify-between mb-4">
+              <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
                   <svg className="w-16 h-16 text-brand" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
@@ -67,13 +68,18 @@ export default function About() {
                     <p className="text-lg lg:text-xl text-gray-500">Vaughan, Ontario</p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="m-6 flex items-center justify-between">
+                <div className="text-2xl lg:text-3xl font-bold text-orange-400">$15.99</div>
                 <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
                   <svg className="w-8 h-8 text-brand" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
                   </svg>
                 </div>
               </div>
-              <div className="text-2xl lg:text-3xl font-bold text-orange-400">$15.99</div>
             </div>
           </div>
 
@@ -99,7 +105,7 @@ export default function About() {
                 </svg>
               </div>
               {/* Profile Picture */}
-              <div className="absolute bottom-8 right-8 w-16 h-16 rounded-full border-2 border-white overflow-hidden shadow-lg">
+              <div className="absolute -bottom-10 right-12 sm:w-[80px] sm:h-[80px] lg:w-[90px] lg:h-[90px] rounded-full border-2 border-white overflow-hidden shadow-lg">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/dba22ddbeb5a2507e33537d05b22e62b327171e1?width=125"
                   alt="Host profile"
@@ -108,7 +114,7 @@ export default function About() {
               </div>
             </div>
             <div className="p-6">
-              <div className="flex items-start justify-between mb-4">
+              <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
                   <svg className="w-16 h-16 text-brand" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
@@ -118,13 +124,18 @@ export default function About() {
                     <p className="text-lg lg:text-xl text-gray-500">Vaughan, Ontario</p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="m-6 bottom-6 left-6 right-6 flex items-center justify-between">
+                <div className="text-2xl lg:text-3xl font-bold text-orange-400">$25.99</div>
                 <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
                   <svg className="w-8 h-8 text-brand" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
                   </svg>
                 </div>
               </div>
-              <div className="text-2xl lg:text-3xl font-bold text-orange-400">$25.99</div>
             </div>
           </div>
 
@@ -138,7 +149,7 @@ export default function About() {
                   className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
                 />
               </div>
-              
+
               {/* Good Badge */}
               <div className="absolute top-8 left-8 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
                 <span className="text-orange-500">👍</span>
@@ -151,7 +162,7 @@ export default function About() {
                 </svg>
               </div>
               {/* Profile Picture */}
-              <div className="absolute bottom-8 right-8 w-16 h-16 rounded-full border-2 border-white overflow-hidden shadow-lg">
+              <div className="absolute -bottom-10 right-12 sm:w-[80px] sm:h-[80px] lg:w-[90px] lg:h-[90px] rounded-full border-2 border-white overflow-hidden shadow-lg">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/b45cbc30509c8c644cc53f9bb3e37e2c45139510?width=125"
                   alt="Host profile"
@@ -160,7 +171,7 @@ export default function About() {
               </div>
             </div>
             <div className="p-6">
-              <div className="flex items-start justify-between mb-4">
+              <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
                   <svg className="w-16 h-16 text-brand" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
@@ -170,13 +181,18 @@ export default function About() {
                     <p className="text-lg lg:text-xl text-gray-500">Stoufville, Ontario</p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="m-6 bottom-6 left-6 right-6 flex items-center justify-between">
+                <div className="text-2xl lg:text-3xl font-bold text-orange-400">$27.99</div>
                 <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
                   <svg className="w-8 h-8 text-brand" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
                   </svg>
                 </div>
               </div>
-              <div className="text-2xl lg:text-3xl font-bold text-orange-400">$27.99</div>
             </div>
           </div>
 
@@ -202,7 +218,7 @@ export default function About() {
                 </svg>
               </div>
               {/* Profile Picture */}
-              <div className="absolute bottom-8 right-8 w-16 h-16 rounded-full border-2 border-white overflow-hidden shadow-lg">
+              <div className="absolute -bottom-10 right-12 sm:w-[80px] sm:h-[80px] lg:w-[90px] lg:h-[90px] rounded-full border-2 border-white overflow-hidden shadow-lg">
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/e40fd9aae4f02425d890e1b0aa478e7d12dc64c1?width=125"
                   alt="Host profile"
@@ -211,7 +227,7 @@ export default function About() {
               </div>
             </div>
             <div className="p-6">
-              <div className="flex items-start justify-between mb-4">
+              <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
                   <svg className="w-16 h-16 text-brand" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
@@ -221,13 +237,18 @@ export default function About() {
                     <p className="text-lg lg:text-xl text-gray-500">Oshawa, Ontario</p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="m-6 bottom-6 left-6 right-6 flex items-center justify-between">
+                <div className="text-2xl lg:text-3xl font-bold text-orange-400">$19.99</div>
                 <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
                   <svg className="w-8 h-8 text-brand" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
                   </svg>
                 </div>
               </div>
-              <div className="text-2xl lg:text-3xl font-bold text-orange-400">$19.99</div>
             </div>
           </div>
         </div>
