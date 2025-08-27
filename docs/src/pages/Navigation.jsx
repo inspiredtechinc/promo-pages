@@ -99,7 +99,7 @@ export default function Navigation({ onSectionClick }) {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-black/40 flex items-start justify-center">
+        <div className="fixed inset-x-4 inset-y-24 z-50  flex items-start justify-center">
           <div
             ref={menuRef}
             className="w-full max-w-md mx-auto mt-0 bg-white rounded-b-3xl shadow-lg py-10 px-6 flex flex-col items-center animate-slideDown relative"
@@ -129,12 +129,14 @@ export default function Navigation({ onSectionClick }) {
               >
                 Testimonial
               </button>
-              <Button className="w-full py-3 rounded-full bg-brand text-white font-semibold hover:bg-brand/90 transition">
-                Sign In
-              </Button>
-              <Button variant="ghost" className="w-full py-3 rounded-full text-gray-800 hover:text-brand font-medium">
-                Sign Up
-              </Button>
+              <div className="flex flex-row justify-between">
+                <Button className="w-full py-3 rounded-full bg-brand text-white font-semibold hover:bg-brand/90 transition">
+                  Sign In
+                </Button>
+                <Button variant="ghost" className="w-full py-3 rounded-full text-gray-800 hover:text-brand font-medium">
+                  Sign Up
+                </Button>
+              </div>
             </div>
           </div>
         </div>
