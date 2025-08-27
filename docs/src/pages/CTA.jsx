@@ -8,7 +8,7 @@ export default function CTA() {
         <div className="absolute -left-80 -top-16 w-[668px] h-[668px] rounded-full bg-orange-50 blur-[250px] pointer-events-none" />
         
         {/* Large decorative search icon */}
-        <div className="absolute left-1/2 top-20 transform -translate-x-1/2 w-96 h-96 opacity-10 pointer-events-none">
+        <div className="absolute left-1/2 top-20 transform -translate-x-1/2 w-72 h-72 lg:w-96 lg:h-96 opacity-10 pointer-events-none">
           <svg className="w-full h-full text-slate-400" fill="currentColor" viewBox="0 0 320 320">
             <path d="M249.463 249.998C255.616 243.888 265.477 243.888 271.629 249.998L312.292 282.82H312.997C321.223 291.135 321.223 304.616 312.997 312.931C304.77 321.246 291.433 321.246 283.207 312.931L249.463 274.258C246.273 271.045 244.48 266.68 244.48 262.128C244.48 257.576 246.273 253.211 249.463 249.998ZM137.361 0.833984C173.57 0.833984 208.297 15.3726 233.901 41.252C259.505 67.1312 273.888 102.231 273.888 138.83C273.888 215.043 212.763 276.826 137.361 276.826C61.9589 276.826 0.833496 215.043 0.833496 138.83C0.833617 62.6169 61.9589 0.834033 137.361 0.833984Z" />
           </svg>
