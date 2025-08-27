@@ -2,15 +2,16 @@
 import { Link } from "react-router-dom";
 import { Button } from "../components/button";
 
+
 export default function Navigation({ onSectionClick }) {
 
     return (
         <>
         {/* Header */}
-      <header className="container relative z-10 px-4 lg:px-28 py-12">
+      <header className="max-w-screen-2xl mx-auto relative z-10 px-4 lg:px-28 py-12">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-brand font-bold text-2xl lg:text-3xl">
+          <div className="text-brand font-bold text-2xl lg:text-4xl">
             Project-X
           </div>
           

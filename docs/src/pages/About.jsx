@@ -14,6 +14,41 @@ import aboutProfile4 from '/assets/about-profileImage4.jpg';
 
 export default function About() {
 
+  const cardData = [
+    {
+      title: "Major Library",
+      location: "Vaughan, Ontario",
+      price: "$15.99",
+      image: aboutImage1,
+      profile: aboutProfile1,
+      lockIcon: aboutLockIcon
+    },
+    {
+      title: "222 Bernard",
+      location: "Vaughan, Ontario",
+      price: "$25.99",
+      image: aboutImage2,
+      profile: aboutProfile2,
+      lockIcon: aboutLockIcon
+    },
+    {
+      title: "89 Crosby",
+      location: "Stoufville, Ontario",
+      price: "$27.99",
+      image: aboutImage3,
+      profile: aboutProfile3,
+      lockIcon: aboutLockIcon
+    },
+    {
+      title: "Workspace",
+      location: "Oshawa, Ontario",
+      price: "$19.99",
+      image: aboutImage4,
+      profile: aboutProfile4,
+      lockIcon: aboutLockIcon
+    }
+  ];
+
   return (
     <section className="relative py-16 lg:py-24 px-4 lg:px-28 overflow-hidden">
       {/* Background blur effects */}
@@ -23,7 +58,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-16 lg:mb-20">
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-semibold leading-tight mb-8 lg:mb-0 max-w-3xl">
+          <h2 className="text-2xl lg:text-5xl font-semibold leading-tight mb-8 lg:mb-0 max-w-3xl">
             <span className="text-gray-800">Where </span>
             <span className="text-brand">People</span>
             <span className="text-gray-800"> and </span>
@@ -38,225 +73,64 @@ export default function About() {
 
         {/* Listings Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 ">
-          
-          {/* Card 1 - Major Library */}
-          <div className="bg-white rounded-3xl shadow-lg overflow-hidden relative">
-            <div className="relative">
-              <div className="md:shrink-0 m-5">
-                <img
-                  src={aboutImage1}
-                  alt="Major Library"
-                  className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
-                />
-              </div>
-              {/* Good Badge */}
-              <div className="absolute top-8 left-8 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
-                <span className="text-orange-500">👍</span>
-                <span className="text-gray-800 font-semibold">Good</span>
-              </div>
-              {/* Heart Icon */}
-              <div className="absolute top-8 right-8 w-16 h-16 bg-black/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              {/* Profile Picture */}
-              <div className="absolute -bottom-10 right-10 w-24 h-24  mx-auto sm:mx-0 rounded-full border-2 border-white overflow-hidden shadow-lg">
-                <img
-                  src={aboutProfile1}
-                  alt="Host profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="p-6">
-              <div className="flex items-start justify-between">
-                <div className="flex items-center space-x-3">
-                  <svg className="w-16 h-16 text-brand" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+
+          {cardData.map((card, idx) => (
+            <div key={idx} className="bg-white rounded-3xl shadow-lg overflow-hidden relative">
+              <div className="relative">
+                <div className="md:shrink-0 m-5">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
+                  />
+                </div>
+                {/* Good Badge */}
+                <div className="absolute top-8 left-8 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
+                  <span className="text-orange-500">👍</span>
+                  <span className="text-gray-800 font-semibold">Good</span>
+                </div>
+                {/* Heart Icon */}
+                <div className="absolute top-8 right-8 w-16 h-16 bg-black/10 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
-                  <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">Major Library</h3>
-                    <p className="text-lg lg:text-xl text-gray-500">Vaughan, Ontario</p>
+                </div>
+                {/* Profile Picture */}
+                <div className="absolute -bottom-10 right-10 w-20 h-20 lg:w-24 lg:h-24 mx-auto sm:mx-0 rounded-full border-2 border-white overflow-hidden shadow-lg">
+                  <img
+                    src={card.profile}
+                    alt="Host profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="pt-6 pl-6">
+                <div className="flex items-start justify-between">
+                  <div className="flex items-center space-x-3">
+                    <svg className="w-10 h-10 lg:w-16 lg:h-16 text-brand" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                    </svg>
+                    <div>
+                      <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">{card.title}</h3>
+                      <p className="text-base lg:text-xl text-gray-500">{card.location}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="m-6 flex items-center justify-between">
+                  <div className="text-2xl lg:text-3xl font-bold text-orange-400">{card.price}</div>
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center">
+                    <img src={card.lockIcon} alt="Lock Icon" className="w-12 h-12 lg:w-24 lg:h-24" />
                   </div>
                 </div>
               </div>
             </div>
-
-            <div className="relative">
-              <div className="m-6 flex items-center justify-between">
-                <div className="text-2xl lg:text-3xl font-bold text-orange-400">$15.99</div>
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                  <img src={aboutLockIcon} alt="Lock Icon" className="w-24 h-24" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2 - 222 Bernard */}
-          <div className="bg-white rounded-3xl shadow-lg overflow-hidden relative">
-            <div className="relative">
-              <div className="md:shrink-0 m-5">
-                <img
-                  src={aboutImage2}
-                  alt="Major Library"
-                  className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
-                />
-              </div>
-              {/* Good Badge */}
-              <div className="absolute top-8 left-8 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
-                <span className="text-orange-500">👍</span>
-                <span className="text-gray-800 font-semibold">Good</span>
-              </div>
-              {/* Heart Icon */}
-              <div className="absolute top-8 right-8 w-16 h-16 bg-black/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              {/* Profile Picture */}
-              <div className="absolute -bottom-10 right-10 w-24 h-24  mx-auto sm:mx-0  rounded-full border-2 border-white overflow-hidden shadow-lg">
-                <img
-                  src={aboutProfile2}
-                  alt="Host profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="p-6">
-              <div className="flex items-start justify-between">
-                <div className="flex items-center space-x-3">
-                  <svg className="w-16 h-16 text-brand" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                  </svg>
-                  <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">222 Bernard</h3>
-                    <p className="text-lg lg:text-xl text-gray-500">Vaughan, Ontario</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="m-6 bottom-6 left-6 right-6 flex items-center justify-between">
-                <div className="text-2xl lg:text-3xl font-bold text-orange-400">$25.99</div>
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                  <img src={aboutLockIcon} alt="Lock Icon" className="w-24 h-24" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3 - 89 Crosby */}
-          <div className="bg-white rounded-3xl shadow-lg overflow-hidden relative">
-            <div className="relative">
-              <div className="md:shrink-0 m-5">
-                <img
-                  src={aboutImage3}
-                  alt="Major Library"
-                  className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
-                />
-              </div>
-
-              {/* Good Badge */}
-              <div className="absolute top-8 left-8 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
-                <span className="text-orange-500">👍</span>
-                <span className="text-gray-800 font-semibold">Good</span>
-              </div>
-              {/* Heart Icon */}
-              <div className="absolute top-8 right-8 w-16 h-16 bg-black/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              {/* Profile Picture */}
-              <div className="absolute -bottom-10 right-10 w-24 h-24  mx-auto sm:mx-0 rounded-full border-2 border-white overflow-hidden shadow-lg">
-                <img
-                  src={aboutProfile3}
-                  alt="Host profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="p-6">
-              <div className="flex items-start justify-between">
-                <div className="flex items-center space-x-3">
-                  <svg className="w-16 h-16 text-brand" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                  </svg>
-                  <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">89 Crosby</h3>
-                    <p className="text-lg lg:text-xl text-gray-500">Stoufville, Ontario</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="m-6 bottom-6 left-6 right-6 flex items-center justify-between">
-                <div className="text-2xl lg:text-3xl font-bold text-orange-400">$27.99</div>
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                  <img src={aboutLockIcon} alt="Lock Icon" className="w-24 h-24" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 4 - Workspace */}
-          <div className="bg-white rounded-3xl shadow-lg overflow-hidden relative">
-            <div className="relative">
-              <div className="md:shrink-0 m-5">
-                <img
-                  src={aboutImage4}
-                  alt="Major Library"
-                  className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
-                />
-              </div>
-              {/* Good Badge */}
-              <div className="absolute top-8 left-8 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
-                <span className="text-orange-500">👍</span>
-                <span className="text-gray-800 font-semibold">Good</span>
-              </div>
-              {/* Heart Icon */}
-              <div className="absolute top-8 right-8 w-16 h-16 bg-black/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              {/* Profile Picture */}
-              <div className="absolute -bottom-10 right-12 w-24 h-24  mx-auto sm:mx-0 rounded-full border-2 border-white overflow-hidden shadow-lg">
-                <img
-                  src={aboutProfile4}
-                  alt="Host profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="p-6">
-              <div className="flex items-start justify-between">
-                <div className="flex items-center space-x-3">
-                  <svg className="w-16 h-16 text-brand" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                  </svg>
-                  <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">Workspace</h3>
-                    <p className="text-lg lg:text-xl text-gray-500">Oshawa, Ontario</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="m-6 bottom-6 left-6 right-6 flex items-center justify-between">
-                <div className="text-2xl lg:text-3xl font-bold text-orange-400">$19.99</div>
-               <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                  <img src={aboutLockIcon} alt="Lock Icon" className="w-24 h-24" />
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
+
+

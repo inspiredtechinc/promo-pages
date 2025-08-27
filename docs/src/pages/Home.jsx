@@ -7,9 +7,15 @@ import Featured from "./Featured";
 import Testimonial from "./Testimonial";
 import CTA from "./CTA";
 import Footer from "./Footer";
-
+import React, { useEffect } from "react";
 
 export default function Home() {
+
+  useEffect(() => {
+
+    document.body.style.zoom = "90%";
+
+  }, []);
 
   const aboutRef = useRef(null);
   const featuredRef = useRef(null);
@@ -17,34 +23,34 @@ export default function Home() {
 
   const scrollToSection = (section) => {
 
-    if(section === 'about' && aboutRef.current){
-      aboutRef.current.scrollIntoView({behavior: "smooth"});
+    if (section === 'about' && aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" });
     }
-    if(section === 'featured' && featuredRef.current) {
-      featuredRef.current.scrollIntoView({behavior: "smooth"});
+    if (section === 'featured' && featuredRef.current) {
+      featuredRef.current.scrollIntoView({ behavior: "smooth" });
     }
-    if(section === 'testimonial' && testimonialRef.current) {
-      testimonialRef.current.scrollIntoView({behavior: "smooth"});
+    if (section === 'testimonial' && testimonialRef.current) {
+      testimonialRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
 
   return (
-    
+
     <div className="min-h-screen bg-white overflow-hidden relative font-sans">
       {/* Background blur effects */}
       <div className="absolute -top-60 -left-52 w-[668px] h-[668px] rounded-full bg-brand-200 blur-[250px] pointer-events-none" />
-      <div className="absolute top-68 right-[-200px] w-[668px] h-[668px] rounded-full bg-brand-100 blur-[250px] pointer-events-none" />
-      
+      <div className="absolute top-68 right-[-200px] w-[668px] h-[668px] rounded-full bg-brand-200 blur-[250px] pointer-events-none" />
+
       {/* Header */}
       <Navigation onSectionClick={scrollToSection} />
 
       {/* Hero Section */}
       <Hero />
 
-      {/* Listings Section */}  
+      {/* Listings Section */}
       <div ref={aboutRef}> <About /> </div>
-       {/* Features Section */}
+      {/* Features Section */}
       <div ref={featuredRef}> <Featured /> </div>
       {/* Customer Feedback Section */}
       <div ref={testimonialRef}> <Testimonial /> </div>

@@ -7,9 +7,11 @@ import Featured from "./pages/Featured";
 import Testimonial from "./pages/Testimonial";
 import NotFound from "./pages/NotFound";
 
+
 const queryClient = new QueryClient();
 
 function App() {
+  
   return (
     <QueryClientProvider client={queryClient}>
         <BrowserRouter basename="/promo-pages/project-x">

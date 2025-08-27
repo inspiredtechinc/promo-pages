@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import { Button } from "../components/button";
 
 export default function NotFound() {
+
   return (
+    
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="px-4 lg:px-28 py-12">

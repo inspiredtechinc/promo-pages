@@ -20,7 +20,7 @@ export default function Featured() {
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Section Header */}
           <div className="mb-16 lg:mb-20">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-semibold leading-tight max-w-5xl">
+            <h2 className="text-2xl  lg:text-5xl font-semibold leading-tight max-w-5xl">
               <span className="text-gray-800">Not just </span>
               <span className="text-brand">features </span>
               <span className="text-gray-800">, your everyday </span>

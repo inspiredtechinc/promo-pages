@@ -23,7 +23,7 @@ export default function Testimonial() {
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20 relative z-10">
           <h3 className="text-brand font-bold text-2xl lg:text-3xl mb-4">Customer's Feedback</h3>
-          <h2 className="text-gray-800 font-bold text-3xl lg:text-4xl mb-6">What people are saying</h2>
+          <h2 className="text-gray-800 font-bold text-xl lg:text-4xl mb-6">What people are saying</h2>
           <p className="text-gray-600 text-lg lg:text-xl max-w-4xl mx-auto">
             Real experiences from travelers and hosts who have connected through our platform.
           </p>
@@ -50,7 +50,7 @@ export default function Testimonial() {
                 </div>
               </div>
               <div className="flex-1">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-2 gap-2">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
                   <h4 className="text-gray-800 font-bold text-lg sm:text-xl lg:text-2xl">Sarah Miller</h4>
                   <div className="flex space-x-1">
                     {[...Array(5)].map((_, i) => (
@@ -60,7 +60,7 @@ export default function Testimonial() {
                     ))}
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">Financial Analyst</p>
+                <p className="text-gray-600 text-base mb-4">Financial Analyst</p>
                 <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                   "I've been using this platform for my last three trips and it's completely changed how I travel. I've made lifelong friends."
                 </p>
@@ -86,7 +86,7 @@ export default function Testimonial() {
                 </div>
               </div>
               <div className="flex-1">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-2 gap-2">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between  gap-2">
                   <h4 className="text-gray-800 font-bold text-lg sm:text-xl lg:text-2xl">Elizabeth Thomp</h4>
                   <div className="flex space-x-1">
                     {[...Array(5)].map((_, i) => (
@@ -96,7 +96,7 @@ export default function Testimonial() {
                     ))}
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">Business Analyst</p>
+                <p className="text-gray-600 text-base mb-4">Business Analyst</p>
                 <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                   "Hosting travelers has brought so much joy into my home. I've learned about different cultures and made connections I never would have otherwise."
                 </p>
@@ -122,7 +122,7 @@ export default function Testimonial() {
                 </div>
               </div>
               <div className="flex-1">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-2 gap-2">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
                   <h4 className="text-gray-800 font-bold text-lg sm:text-xl lg:text-2xl">Moe John</h4>
                   <div className="flex space-x-1">
                     {[...Array(3)].map((_, i) => (
@@ -137,7 +137,7 @@ export default function Testimonial() {
                     ))}
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">Product Owner</p>
+                <p className="text-gray-600 text-base mb-4">Product Owner</p>
                 <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                   "The verification system and reviews gave me the confidence to try couch surfing. I've met friendly hosts who made me feel welcome from day one. it's been an amazing experience!"
                 </p>
@@ -163,7 +163,7 @@ export default function Testimonial() {
                 </div>
               </div>
               <div className="flex-1">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-2 gap-2">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
                   <h4 className="text-gray-800 font-bold text-lg sm:text-xl lg:text-2xl">Abdul Khan</h4>
                   <div className="flex space-x-1">
                     {[...Array(4)].map((_, i) => (
@@ -176,7 +176,7 @@ export default function Testimonial() {
                     </svg>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">Marketing Manager</p>
+                <p className="text-gray-600 text-base mb-4">Marketing Manager</p>
                 <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                   "I've been using this platform for my last three trips and it's completely changed how I travel. I've made lifelong friends."
                 </p>
