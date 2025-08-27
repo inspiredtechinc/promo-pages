@@ -1,4 +1,13 @@
 
+//assets
+import featureImage1 from '/assets/feature-image1.jpg';
+import featureImage2 from '/assets/feature-image2.jpg';
+import featureImage3 from '/assets/feature-image3.jpg';
+import featureImage4 from '/assets/feature-image4.jpg';
+import fetureSvg1 from '/assets/feature-svg1.svg';
+import fetureSvg2 from '/assets/feature-svg2.svg';
+import fetureSvg3 from '/assets/feature-svg3.svg';
+import fetureSvg4 from '/assets/feature-svg4.svg'; 
 
 export default function Featured() {
   return (
@@ -27,9 +36,7 @@ export default function Featured() {
             <div className="flex-1 lg:max-w-lg">
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mb-6">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v11h2v3h2v-3h2v3h2v-3h9v3h2v-3h2V6h-2z"/>
-                  </svg>
+                  <img src={fetureSvg1} alt="sleep-icon" className='w-12 h-12' />
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">Shared Sleep Spaces</h3>
                 <p className="text-lg lg:text-xl text-gray-500 leading-relaxed">
@@ -39,7 +46,7 @@ export default function Featured() {
             </div>
             <div className="flex-1">
               <img 
-                src="https://api.builder.io/api/v1/image/assets/TEMP/56d39c4678bcbfa1640adb6ecaeb35fba2cc7c80?width=1016" 
+                src={featureImage1} 
                 alt="Shared Sleep Spaces" 
                 className="w-full h-80 lg:h-96 object-cover rounded-3xl"
               />
@@ -50,9 +57,7 @@ export default function Featured() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
             <div className="flex-1 lg:max-w-lg p-8">
               <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
+                <img src={fetureSvg2} alt="kitchen-icon" className='w-12 h-12' />
               </div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">Community Kitchens & Lounges</h3>
               <p className="text-lg lg:text-xl text-gray-500 leading-relaxed">
@@ -61,7 +66,7 @@ export default function Featured() {
             </div>
             <div className="flex-1">
               <img 
-                src="https://api.builder.io/api/v1/image/assets/TEMP/183e54858710c97345aecc0029662c9fdb147e6f?width=1094" 
+                src={featureImage2} 
                 alt="Community Kitchens & Lounges" 
                 className="w-full h-80 lg:h-96 object-cover rounded-3xl"
               />
@@ -73,9 +78,7 @@ export default function Featured() {
             <div className="flex-1 lg:max-w-lg">
               <div className="bg-white rounded-lg shadow-lg p-8">
                 <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mb-6">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9z"/>
-                  </svg>
+                  <img src={fetureSvg3} alt="storage-icon" className='w-12 h-12' />
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">Storage & Charging Stations</h3>
                 <p className="text-lg lg:text-xl text-gray-500 leading-relaxed">
@@ -85,7 +88,7 @@ export default function Featured() {
             </div>
             <div className="flex-1">
               <img 
-                src="https://api.builder.io/api/v1/image/assets/TEMP/0918fe708b42bde3d5d01cd47d6dca2220c56901?width=1098" 
+                src={featureImage3} 
                 alt="Storage & Charging Stations" 
                 className="w-full h-80 lg:h-96 object-cover rounded-3xl"
               />
@@ -96,9 +99,7 @@ export default function Featured() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
             <div className="flex-1 lg:max-w-lg p-8">
               <div className="w-12 h-12 bg-brand rounded-full flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                </svg>
+                <img src={fetureSvg4} alt="workspace-icon" className='w-12 h-12' />
               </div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">Flexible Workspaces</h3>
               <p className="text-lg lg:text-xl text-gray-500 leading-relaxed">
@@ -107,7 +108,7 @@ export default function Featured() {
             </div>
             <div className="flex-1">
               <img 
-                src="https://api.builder.io/api/v1/image/assets/TEMP/be4ff83acd02b169b8dbc37f9f8ce8c6e7b00f16?width=1110" 
+                src={featureImage4} 
                 alt="Flexible Workspaces" 
                 className="w-full h-80 lg:h-96 object-cover rounded-3xl"
               />

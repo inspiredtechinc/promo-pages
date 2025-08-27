@@ -1,5 +1,17 @@
 import { Button } from "../components/button";
 
+//assets
+import aboutImage1 from '/assets/about-image1.jpg';
+import aboutImage2 from '/assets/about-image2.jpg';
+import aboutImage3 from '/assets/about-image3.png';
+import aboutImage4 from '/assets/about-image4.png';
+import aboutLockIcon from '/assets/about-lockIcon.svg';
+import aboutProfile1 from '/assets/about-profileImage1.jpg';
+import aboutProfile2 from '/assets/about-profileImage2.jpg';
+import aboutProfile3 from '/assets/about-profileImage3.jpg';
+import aboutProfile4 from '/assets/about-profileImage4.jpg';
+
+
 export default function About() {
 
   return (
@@ -25,14 +37,14 @@ export default function About() {
         </div>
 
         {/* Listings Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16  lg:m-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 ">
           
           {/* Card 1 - Major Library */}
           <div className="bg-white rounded-3xl shadow-lg overflow-hidden relative">
             <div className="relative">
               <div className="md:shrink-0 m-5">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/d6719ec5c07af012b22dd4751efc89234e149daf?width=1044"
+                  src={aboutImage1}
                   alt="Major Library"
                   className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
                 />
@@ -49,9 +61,9 @@ export default function About() {
                 </svg>
               </div>
               {/* Profile Picture */}
-              <div className="absolute -bottom-10 right-12 sm:w-[80px] sm:h-[80px] lg:w-[90px] lg:h-[90px] rounded-full border-2 border-white overflow-hidden shadow-lg">
+              <div className="absolute -bottom-10 right-10 w-24 h-24  mx-auto sm:mx-0 rounded-full border-2 border-white overflow-hidden shadow-lg">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/bc3462840de2d1f0129bd606bc3a51d27e1b242d?width=125"
+                  src={aboutProfile1}
                   alt="Host profile"
                   className="w-full h-full object-cover"
                 />
@@ -75,9 +87,7 @@ export default function About() {
               <div className="m-6 flex items-center justify-between">
                 <div className="text-2xl lg:text-3xl font-bold text-orange-400">$15.99</div>
                 <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-brand" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
-                  </svg>
+                  <img src={aboutLockIcon} alt="Lock Icon" className="w-24 h-24" />
                 </div>
               </div>
             </div>
@@ -88,7 +98,7 @@ export default function About() {
             <div className="relative">
               <div className="md:shrink-0 m-5">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/43d118f90d1a2d8971805132c6c7f33f9c7c8a6e?width=1044"
+                  src={aboutImage2}
                   alt="Major Library"
                   className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
                 />
@@ -105,9 +115,9 @@ export default function About() {
                 </svg>
               </div>
               {/* Profile Picture */}
-              <div className="absolute -bottom-10 right-12 sm:w-[80px] sm:h-[80px] lg:w-[90px] lg:h-[90px] rounded-full border-2 border-white overflow-hidden shadow-lg">
+              <div className="absolute -bottom-10 right-10 w-24 h-24  mx-auto sm:mx-0  rounded-full border-2 border-white overflow-hidden shadow-lg">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/dba22ddbeb5a2507e33537d05b22e62b327171e1?width=125"
+                  src={aboutProfile2}
                   alt="Host profile"
                   className="w-full h-full object-cover"
                 />
@@ -131,9 +141,7 @@ export default function About() {
               <div className="m-6 bottom-6 left-6 right-6 flex items-center justify-between">
                 <div className="text-2xl lg:text-3xl font-bold text-orange-400">$25.99</div>
                 <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-brand" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
-                  </svg>
+                  <img src={aboutLockIcon} alt="Lock Icon" className="w-24 h-24" />
                 </div>
               </div>
             </div>
@@ -144,7 +152,7 @@ export default function About() {
             <div className="relative">
               <div className="md:shrink-0 m-5">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/06f993b318b100afd2c103702b431b116ecc7374?width=1044"
+                  src={aboutImage3}
                   alt="Major Library"
                   className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
                 />
@@ -162,9 +170,9 @@ export default function About() {
                 </svg>
               </div>
               {/* Profile Picture */}
-              <div className="absolute -bottom-10 right-12 sm:w-[80px] sm:h-[80px] lg:w-[90px] lg:h-[90px] rounded-full border-2 border-white overflow-hidden shadow-lg">
+              <div className="absolute -bottom-10 right-10 w-24 h-24  mx-auto sm:mx-0 rounded-full border-2 border-white overflow-hidden shadow-lg">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/b45cbc30509c8c644cc53f9bb3e37e2c45139510?width=125"
+                  src={aboutProfile3}
                   alt="Host profile"
                   className="w-full h-full object-cover"
                 />
@@ -188,9 +196,7 @@ export default function About() {
               <div className="m-6 bottom-6 left-6 right-6 flex items-center justify-between">
                 <div className="text-2xl lg:text-3xl font-bold text-orange-400">$27.99</div>
                 <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-brand" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
-                  </svg>
+                  <img src={aboutLockIcon} alt="Lock Icon" className="w-24 h-24" />
                 </div>
               </div>
             </div>
@@ -201,7 +207,7 @@ export default function About() {
             <div className="relative">
               <div className="md:shrink-0 m-5">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/413aa294beaa0a69a2488d254afd1f98ef9283b2?width=1044"
+                  src={aboutImage4}
                   alt="Major Library"
                   className="block w-full h-72 lg:h-80 object-center object-cover rounded-2xl"
                 />
@@ -218,9 +224,9 @@ export default function About() {
                 </svg>
               </div>
               {/* Profile Picture */}
-              <div className="absolute -bottom-10 right-12 sm:w-[80px] sm:h-[80px] lg:w-[90px] lg:h-[90px] rounded-full border-2 border-white overflow-hidden shadow-lg">
+              <div className="absolute -bottom-10 right-12 w-24 h-24  mx-auto sm:mx-0 rounded-full border-2 border-white overflow-hidden shadow-lg">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/e40fd9aae4f02425d890e1b0aa478e7d12dc64c1?width=125"
+                  src={aboutProfile4}
                   alt="Host profile"
                   className="w-full h-full object-cover"
                 />
@@ -243,10 +249,8 @@ export default function About() {
             <div className="relative">
               <div className="m-6 bottom-6 left-6 right-6 flex items-center justify-between">
                 <div className="text-2xl lg:text-3xl font-bold text-orange-400">$19.99</div>
-                <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-brand" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z" />
-                  </svg>
+               <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center">
+                  <img src={aboutLockIcon} alt="Lock Icon" className="w-24 h-24" />
                 </div>
               </div>
             </div>

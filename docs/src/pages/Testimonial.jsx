@@ -1,7 +1,13 @@
+//assets
+import testiImage1 from '/assets/testimonial-image1.jpg';
+import testiImage2 from '/assets/testimonial-image2.jpg';
+import testiImage3 from '/assets/testimonial-image3.jpg';
+import testiImage4 from '/assets/testimonial-image4.jpg';
 
 
 export default function Testimonial() {
   return (
+    
     <section className="py-16 lg:py-24 px-4 lg:px-28">
 
       <div className="bg-slate-200 max-w-7xl mx-auto rounded-[50px] px-8 lg:px-12 py-16 lg:py-20 relative overflow-hidden">
@@ -25,13 +31,14 @@ export default function Testimonial() {
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-stretch relative z-10">
+
           {/* Testimonial 1 - Sarah Miller */}
           <div className="bg-white  rounded-2xl shadow-xl p-6 sm:p-8">
             <div className="flex flex-col sm:flex-row items-start sm:space-x-6 space-y-4 sm:space-y-0">
               <div className="relative flex-shrink-0">
                 <div className="w-20 h-20 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
                   <img
-                    src="https://images.unsplash.com/photo-1494790108755-2616b639e709?w=100&h=100&fit=crop&crop=face"
+                    src={testiImage1}
                     alt="Sarah Miller"
                     className="w-full h-full object-cover"
                   />
@@ -67,7 +74,7 @@ export default function Testimonial() {
               <div className="relative flex-shrink-0">
                 <div className="w-20 h-20 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
                   <img
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+                    src={testiImage2}
                     alt="Elizabeth Thomp"
                     className="w-full h-full object-cover"
                   />
@@ -103,7 +110,7 @@ export default function Testimonial() {
               <div className="relative flex-shrink-0">
                 <div className="w-20 h-20 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
                   <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                    src={testiImage3}
                     alt="Moe John"
                     className="w-full h-full object-cover"
                   />
@@ -144,7 +151,7 @@ export default function Testimonial() {
               <div className="relative flex-shrink-0">
                 <div className="w-20 h-20 rounded-full border-2 border-brand overflow-hidden mx-auto sm:mx-0">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                    src={testiImage4}
                     alt="Abdul Khan"
                     className="w-full h-full object-cover"
                   />

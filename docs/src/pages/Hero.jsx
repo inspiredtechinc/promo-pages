@@ -1,5 +1,6 @@
 import { Button } from "../components/button";
 import { ArrowRight } from "lucide-react";
+import heroMainImage from '/assets/Hero-mainImage.png';
 
 export default function Hero() {
 
@@ -29,7 +30,7 @@ export default function Hero() {
         <div className="flex justify-center items-center pointer-events-none mt-4 lg:mt-6">
           <div className="relative w-full max-w-4xl">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/6701368a7507591afdb6d2d14a5c23b45a9ce5b8?width=2484"
+              src={heroMainImage}
               alt="Happy traveler with luggage giving thumbs up"
               className="w-full h-64 sm:h-96 lg:h-[550px] object-contain"
             />
