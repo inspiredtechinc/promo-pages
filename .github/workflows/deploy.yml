@@ -1,0 +1,25 @@
+name: Deploy Project-K to GitHub Pages
+
+on:
+  push:
+    branches:
+      - project-x
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs
+          keep_files: false
+          cname: ''  # Optional: set a custom domain name if needed
+          commit_message: "Deploy Project-K static site to GitHub Pages"
