@@ -1141,6 +1141,32 @@ p {
   padding: 10px 0;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-k-logo {
+    height: 40px; /* Adjust as needed */
+    width: auto;
+    margin-right: 8px; /* Spacing between the logo and text */
+}
+
+.project-k-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem; /* Larger font size for prominence */
+    font-weight: 700; /* Bold font weight */
+    color: #4E6EF1; /* Dark color for contrast */
+}
+
+/* Add a responsive style to reduce font size on smaller screens */
+@media (max-width: 767px) {
+    .project-k-name {
+        font-size: 1.2rem;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .sticky .navbar {
     padding: 10px 0;
@@ -1855,6 +1881,13 @@ p {
 
 .footer .footer-shape .shape.shape-1 {
   bottom: 0px;
+}
+
+.project-k-name-footer {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem; /* Larger font size for prominence */
+    font-weight: 700; /* Bold font weight */
+    color: #ffff; /* Dark color for contrast */
 }
 
 @media only screen and (min-width: 1400px) {
