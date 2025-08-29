@@ -1,15 +1,19 @@
 
 # Promo Pages
 
-[![Deploy project-* branches](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg)](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml)
+[![Deploy project-* branches](https://github.com/inspiredtechinc/promo-pages/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/inspiredtechinc/promo-pages/actions/workflows/pages/pages-build-deployment)
 
 ## 🚀 Project Previews
 
 Preview any deployed project-* branch at:
 
-- [project-c](https://inspiredtechinc.github.io/promo-pages/project-c/) ![Deploy project-c](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg?branch=project-c)
-- [project-k](https://inspiredtechinc.github.io/promo-pages/project-k/) ![Deploy project-k](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg?branch=project-k)
-- [project-x](https://inspiredtechinc.github.io/promo-pages/project-x/) ![Deploy project-x](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg?branch=project-x)
+### Preview deployed project branches
+
+| Project   | Link                                                                 | Status |
+|-----------|----------------------------------------------------------------------|--------|
+| project-c | [Open ↗](https://inspiredtechinc.github.io/promo-pages/project-c/)   | ![Deploy](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg?branch=project-c) |
+| project-k | [Open ↗](https://inspiredtechinc.github.io/promo-pages/project-k/)   | ![Deploy](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg?branch=project-k) |
+| project-x | [Open ↗](https://inspiredtechinc.github.io/promo-pages/project-x/)   | ![Deploy](https://github.com/inspiredtechinc/promo-pages/actions/workflows/deploy.yml/badge.svg?branch=project-x) |
 
 
 ## 🛠 How to Deploy a New Project
